@@ -1,0 +1,592 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Header */
+.header {
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.header_logo img{
+    display: block;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 32px;
+}
+
+.active{
+    position: relative;
+}
+
+.active::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -15px;
+    width: 45%;
+    height: 3px;
+    background: #717cff;
+    border-radius: 2px;
+}
+
+.header__link{
+    color: #373737;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+ .header__tell{
+    background: #00BAFC;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 16px;
+ }
+
+ /* End of Header */
+
+ /* Main */
+/* Biznes */
+.biznes__list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+    gap: 0 174px;
+}
+
+.biznes__list-item{
+    max-width:500px;
+}
+
+.biznes__list-item h2{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 130%;
+    color: #000000;
+}
+
+.biznes__list-item p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    padding-top: 16px;
+    padding-bottom: 24px;
+}
+
+.biznes__list-item a{
+    text-decoration: none;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 10px;
+    width: 232px;
+    height: 40px;
+    background: #00BAFC;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+/* End of Biznes */
+
+/* Xizmatlar */
+
+.xizmatlar__title{
+    margin-top: 130px;
+}
+
+.xizmatlar__title h2{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    text-align: center;
+    color: #000000;
+}
+
+.xizmatlar__text{
+    max-width: 719px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 auto;
+    text-align: center;
+    color: #000000;
+    padding-top: 16px;
+}
+
+.xizmatlar__box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 50px
+}
+
+.xizmatlar__list{
+    width: 320px;
+    height: 260px;
+    left: 880px;
+    top: 8px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    list-style: none;
+}
+
+.xizmatlar__list img{
+    padding-left: 70px;
+    padding-top: 30px;
+}
+
+.xizmatlar__list h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    color: #000000;
+    margin-top: 16px;
+}
+
+.xizmatlar__list p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    margin-top: 16px;
+}
+
+.buyurtma{
+    text-align: center;
+    margin-top: 72px;
+}
+
+.buyurtma__link{
+    width: 167px;
+    height: 40px;
+    left: 0px;
+    top: 24px;
+    background: #00BAFC;
+    border-radius: 5px;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.sahifa__link{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #00BAFC;
+    padding-left: 16px;
+}
+
+/* End of Xizmatlar */
+
+/* Ish tartibi */
+
+.ish__tartibi__title{
+    margin-top: 120px;  
+}
+
+.ish__tartibi__title h2{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    text-align: center;
+    color: #000000;
+}
+
+.ish__tartibi__title p{
+    max-width: 719px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 auto;
+    text-align: center;
+    color: #000000;
+    padding-top: 16px;
+}
+
+.talablar{
+    display: flex;
+    margin-top: 24px;
+}
+
+.talablar__img{
+    padding-left: 180px;
+}
+
+.talablar__item{
+    margin-top: 124px;
+    padding-left: 32px;
+}
+
+.talablar__item h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    color: #000000;
+}
+
+.talablar__item p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.yechimlar{
+    display: flex;
+    margin-top: 48px;
+}
+
+.yechimlar__item{
+    padding-left: 180px;
+    margin-top: 70px;
+}
+
+.yechimlar__item h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #000000;
+}
+
+.yechimlar__item p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.yechimlar__img{
+    padding-left: 40px;
+}
+
+.loyiha{
+    display: flex;
+    margin-top: 24px;
+}
+
+.loyiha__img{
+    padding-left: 180px;
+}
+
+.loyiha__item{
+    margin-top: 95px;
+    padding-left: 15px;
+}
+
+.loyiha__item h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #000000;
+}
+
+.loyiha__item p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.topshiriq{
+    display: flex;
+    margin-top: 30px;
+}
+
+.topshiriq__item{
+    padding-left: 180px;
+    margin-top: 70px;
+}
+
+.topshiriq__item h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #000000;
+}
+
+.topshiriq__item p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.topshiriq__img{
+    padding-left: 70px;
+}
+
+.quvatlash{
+    display: flex;
+    margin-top: 60px;
+}
+
+.quvatlash__img{
+    padding-left: 180px;
+}
+
+.quvatlash__item{
+    margin-top: 110px;
+    padding-left: 20px;
+}
+
+.quvatlash__item h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #000000;
+}
+
+.quvatlash__item p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+/* End of Ish tartibi */
+
+/* Zakaz */
+.zakaz__list{
+    max-width: 1300px;
+    height: 543px;
+    background: #00BAFC;
+    margin-top: 70px;
+}
+
+.zakaz__title{
+    margin-top: 60px;
+}
+
+.zakaz__title h2{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    text-align: center;
+    padding-top: 60px;
+    color:white ;
+}
+
+.zakaz__title p{
+    max-width: 719px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 auto;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 16px;
+}
+
+.imput{
+    padding: 24px;
+    gap: 16px;
+    width: 348px;
+    height: 304px;
+    background: #FFFFFF;
+    border-radius: 1px;
+    margin:0 auto;
+    margin-top: 24px;
+}
+
+input {
+    padding: 16px 50px;
+    background: #F3F3F3;
+    border-radius: 1px; 
+}
+
+input::placeholder {
+    color: rgb(10, 10, 10);
+    font-size: 16px;
+}
+
+#phone{
+    margin-top: 16px;
+}
+
+#yunalishlar{
+    margin-top: 16px;
+}
+
+.buyurtmalar{
+    text-align: center;
+    margin-top: 16px;
+}
+
+/* End of Zakaz */
+
+/* Footer */
+
+.footer__list{
+    display: flex;
+    max-width: 1300px;
+    height: 338px;
+    background: #000000;
+}
+
+.footer__list-item{
+    padding-left: 100px;
+
+}
+.footer__list-item h2{
+    width: 149px;
+    height: 26px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-top: 56px;
+}
+
+.footer__list-item p{
+    width: 320px;
+    height: 120px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+
+.footer__sayt{
+    margin-top: 56px;
+    padding-left:100px;
+}
+
+.footer__sayt h2{
+    width: 149px;
+    height: 26px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+
+.sayt__list{
+    list-style: none;
+}
+
+.sayt__link a{
+    width: 87px;
+    height: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+.footer__vebsite{
+    margin-top: 56px;
+    padding-left: 87px;
+}
+
+.footer__vebsite h2{
+    width: 149px;
+    height: 26px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+
+.footer__vebsite-item{
+    list-style: none;
+
+}
+
+.footer__vebsite-items a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+/* End of Footer */
+
+/* Xizmatlar section */
+
+.hero__title{
+    text-align: center;
+     margin-top: 140px;
+}
+
+.hero__tItle h1{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    color: #000000;
+}
+
+.hero__title p{
+    width: 800px;
+    height: 72px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin: 0 auto;
+}
+
+.hero__coment{
+    max-width: 1300px;
+    height: 2274px;
+    margin-top: 70px;
+    background:#F4F4F4 ;
+}
+
+.hero__box{
+    max-width: 804px;
+    height: 378px;
+    background: #FFFFFF;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+}
+
+
+
+
